@@ -27,8 +27,11 @@ unencoded : https://www.immobilienscout24.de/Suche/de/bayern/muenchen/wohnung-mi
 encoded : https%3A%2F%2Fwww.immobilienscout24.de%2FSuche%2Fde%2Fbayern%2Fmuenchen%2Fwohnung-mieten%3FenteredFrom%3Done_step_search
 ````
 
-This URL contains a number of parameters that we will explain:
-
-    /de/bayern/muenchen/wohnung-mieten: Here the country : **de**, state: **bayern**, city:  **muenchen** and finally we are searching a flat to rent i.e indicated by **wohnung-mieten**
-    l stands for the location you want to search for jobs. In our case, we used l=California.
-    start stands for the starting point for the pagination. We use the start parameter to paginate through results. 
+This URL contains a number of parameters that we will need to understand inorder to paginate:
+````
+    /de/bayern/muenchen/wohnung-mieten: 
+     |   |        |        └── flat to rent **wohnung-mieten**
+     |   |        └── city:  **muenchen** 
+     |   └── state: **bayern**                     
+     └── country : **de** 
+````  
