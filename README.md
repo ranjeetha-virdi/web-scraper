@@ -6,7 +6,7 @@ We want to scrape property features like price, address,nos of rooms, living spa
 
 ````
 ├── scrapy.cfg
-└── myproject
+└── propscraper
     ├── __init__.py
     ├── items.py
     ├── middlewares.py
