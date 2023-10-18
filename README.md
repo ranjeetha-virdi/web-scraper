@@ -58,6 +58,6 @@ With immobilienscout24.de it is very easy to extract the data that we need as th
 So get at this data we can just use a regex command to find the window.IS24["resultlistEntry"] json on the page and parse it's contents.
 
 ## step 2: Build property Scraper:
-So the first thing we need to do is to build a Scrapy spider that will send a request to the immobilien page,This will extract all the properties id from the property website page, create & request to url of each property with its id, and then trigger a parse_job scraper when it recieves a response.
+So the first thing we need to do is to build a Scrapy spider that will send a request to the immobilien page,This will extract all the properties id from the property website page, create & request to url of each property with its id, and then trigger a parse_job scraper when it recieves a response. The data scrapped is stored in PostgresSQL database.
 
 
