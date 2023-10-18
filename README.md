@@ -16,3 +16,7 @@ We want to scrape property features like price, address,nos of rooms, living spa
         └── __init__.py
         └── immoscraper.py
 ````
+### Scale: 
+This will be a relatively small scale scraping process (hundreds of keywords), so no need to design a more sophisticated infrastructure.
+### Data Storage: 
+To store the scraped data to a PostgresSQL Database.
