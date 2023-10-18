@@ -21,16 +21,30 @@ This will be a relatively small scale scraping process (hundreds of keywords), s
 ### Data Storage: 
 To store the scraped data to a PostgresSQL Database.
 ## Step 1: Understand immobilienscout24.de web pages.
-For example, here is how we would get search results for flats for rent in Munich.
+1. For example, here is how we would get search results for flats for rent in Munich.
 ````
 unencoded : https://www.immobilienscout24.de/Suche/de/bayern/muenchen/wohnung-mieten?enteredFrom=one_step_search
 encoded : https%3A%2F%2Fwww.immobilienscout24.de%2FSuche%2Fde%2Fbayern%2Fmuenchen%2Fwohnung-mieten%3FenteredFrom%3Done_step_search
 ````
 
-This URL contains a number of parameters that we will need to understand inorder to paginate:
+This URL contains a number of parameters that we will need to understand inorder to paginate/navigate through the pages of the website:
 ````
     /de/bayern/muenchen/wohnung-mieten: 
      |   |        |        └── flat to rent **wohnung-mieten**
+     |   |        └── city:  **muenchen** 
+     |   └── state: **bayern**                     
+     └── country : **de** 
+````  
+2. Similarly if we want to scrape properties for sale then here is how we would get search results for flats for sale in Munich.
+````
+unencoded : https://www.immobilienscout24.de/Suche/de/bayern/muenchen/wohnung-kaufen?enteredFrom=one_step_search
+encoded : https%3A%2F%2Fwww.immobilienscout24.de%2FSuche%2Fde%2Fbayern%2Fmuenchen%2Fwohnung-kaufen%3FenteredFrom%3Done_step_search
+````
+
+This URL contains a number of parameters that we will need to understand inorder to paginate/navigate through the pages of the website:
+````
+    /de/bayern/muenchen/wohnung-kaufen: 
+     |   |        |        └── flat to rent **wohnung-kaufen**
      |   |        └── city:  **muenchen** 
      |   └── state: **bayern**                     
      └── country : **de** 
