@@ -49,3 +49,9 @@ This URL contains a number of parameters that we will need to understand inorder
      |   └── state: **bayern**                     
      └── country : **de** 
 ````  
+3. Using these parameters we can customise our requests to the property search endpoint to either scrape overall property data data or get property URLs that we can scrape individually.
+
+With immobilienscout24.de it is very easy to extract the data that we need as the data is available as hidden JSON data on the page.(resultlist.resultlist has an array of 20 property listings)
+![js_obj](https://github.com/ranjeetha-virdi/web-scraper/assets/81987445/94827ab8-317f-47fc-bdf8-febb4def44b7)
+
+
