@@ -1,6 +1,6 @@
 # Develop a Webscraper using Scrapy
 ### Objective: 
-The objective for this scraping system is to monitor property postings for property website Immobillienscout and scarp the data for each property posted.
+The objective for this scraping system is to monitor property listings on the German real-estate website www.immobillienscout24.de and scarp the data for each property posted.
 ### Required Data: 
 We want to scrape property features like price, address,nos of rooms, living space etc and store the relevant information.
 
